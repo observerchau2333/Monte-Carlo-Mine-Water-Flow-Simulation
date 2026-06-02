@@ -55,9 +55,9 @@ English version: [README.md](README.md)
    - 排除这滴水已经走过的巷道，避免在环中无限循环；
    - 计算每条候选巷道的选择权重：
 
-     $
+     $$
      w_i = e^{-\alpha h_i}
-     $
+     $$
 
      其中 `h_i` 是候选巷道 `i` 当前的水位高度。
 
