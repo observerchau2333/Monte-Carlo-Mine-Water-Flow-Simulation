@@ -71,7 +71,7 @@ English version: [README.md](README.md)
 
 ## 基于水位的随机选择
 
-本模型最重要的反馈机制是：
+本模型的反馈机制是：
 
 $$
 P_i =
