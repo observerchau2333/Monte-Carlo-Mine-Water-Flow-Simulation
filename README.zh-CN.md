@@ -43,7 +43,7 @@ English version: [README.md](README.md)
 1. 计算单滴水的体积：
 
    $$
-   V_{drop} = \frac{A \Delta t}{N_{\text{drops}}}
+   V_{drop} = \frac{A \Delta t}{N_{drops}}
    $$
 
 2. 从源点释放 `N_DROPS` 滴水。
