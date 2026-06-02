@@ -53,9 +53,7 @@ English version: [README.md](README.md)
    - 排除这滴水已经走过的巷道，避免在环中无限循环；
    - 计算每条候选巷道的选择权重：
 
-     $$
-     w_i = e^{-\alpha h_i}
-     $$
+     $$w_i = e^{-\alpha h_i}$$
 
      其中 `h_i` 是候选巷道 `i` 当前的水位高度。
 
@@ -65,7 +63,7 @@ English version: [README.md](README.md)
 
 4. 当水滴停止后，计算它对路径的水位贡献：
 
-   $   \Delta h = \frac{V_{\text{drop}}}{L_{\text{path}} W}   $
+   $$\Delta h = \frac{V_{\text{drop}}}{L_{\text{path}} W}$$
 
    然后将 $\Delta h$ 加到这滴水走过的每一条巷道上。
 
