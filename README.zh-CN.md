@@ -55,9 +55,9 @@ English version: [README.md](README.md)
    - 排除这滴水已经走过的巷道，避免在环中无限循环；
    - 计算每条候选巷道的选择权重：
 
-     $$
+     $
      w_i = e^{-\alpha h_i}
-     $$
+     $
 
      其中 `h_i` 是候选巷道 `i` 当前的水位高度。
 
@@ -67,9 +67,7 @@ English version: [README.md](README.md)
 
 4. 当水滴停止后，计算它对路径的水位贡献：
 
-   $$
-   \Delta h = \frac{V_{\text{drop}}}{L_{\text{path}} W}
-   $$
+   $   \Delta h = \frac{V_{\text{drop}}}{L_{\text{path}} W}   $
 
    然后将 $\Delta h$ 加到这滴水走过的每一条巷道上。
 
@@ -95,22 +93,6 @@ $$
 当 `alpha` 较小时，水滴选择路径更接近均匀随机。
 
 当 `alpha` 较大时，水滴会更明显地偏向低水位巷道。这样高水位区域会变得“不吸引”后续水滴，而低水位区域更容易继续接收水，从而形成一种平衡效应。
-
-## 输出结果
-
-运行程序后，结果会保存到：
-
-```text
-outputs/
-```
-
-生成文件包括：
-
-- `mine_water_final_network.png`：最终网络图，边的颜色和宽度表示水位高度；
-- `water_height_history.png`：各巷道水位随模拟步数变化的曲线图；
-- `water_height_history.csv`：中间水位快照数据表，可用 Excel 或其他数据分析工具打开。
-
-终端中也会打印第 `0` 步、每个 `SNAPSHOT_INTERVAL` 步，以及最终步的水位结果。
 
 ## 主要参数
 
